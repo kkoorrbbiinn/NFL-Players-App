@@ -1,4 +1,4 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config();
 const express = require('express');
 // const path = require('path')
 const connectToDb = require('./Backend/models/index');
@@ -7,8 +7,8 @@ const app = express();
 
 connectToDb();
 
-app.get('/', (req, res) => {
-    res.json({hello: 'world'});
+app.get('/api/comments', (req, res) => {
+    res.json('Get Comments');
 })
 
 app.use(express.urlencoded({ extended: true }));
