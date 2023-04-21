@@ -7,9 +7,7 @@ const app = express();
 
 connectToDb();
 
-app.get('/api/comments', (req, res) => {
-    res.json('Get Comments');
-})
+app.get('/api/comments', require('./Backend/controllers/comments'))
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())

@@ -2,9 +2,8 @@ const express = require('express')
 const router = express.Router()
 const db = require('../models')
 
-router.get('/', function (req, res) {
-    db.Comment.find({ nullId: req.params.nullId })
-        .then(comments => res.json(comments))
+router.get('/api/comments', function (req, res) {
+    res.json({ message: 'Get Commnts'})
 })
 
 router.post('/comments', (req, res) => {
