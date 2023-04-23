@@ -2,9 +2,9 @@ const mongoose = require('mongoose')
 
 const CommentSchema = new mongoose.Schema(
     {
-        name: { type: String, required: true },
-        content: { type: String, required: true },
-        courseId: { type: Number, require: true }
+        name: { type: String },
+        content: { type: String },
+        courseId: { type: Number }
     },
     { timestamps: true }
 )

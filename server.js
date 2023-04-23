@@ -7,12 +7,11 @@ const app = express();
 
 connectToDb();
 
-app.get('/api/comments', require('./Backend/controllers/comments'))
+app.get('/api/comments', require('./Backend/routes/commentRoutes'))
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
-
-// app.use('/api/comments', commentsCtrl)
+app.use('/api/comments', require('./Backend/routes/commentRoutes'))
 
 app.listen(process.env.PORT, function () {
     console.log('Express is listening to port', process.env.PORT);
