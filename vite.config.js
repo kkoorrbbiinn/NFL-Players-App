@@ -9,13 +9,6 @@ export default defineConfig({
   root: path.resolve(__dirname, 'frontend'),
   envFile: path.resolve(__dirname, '.env'),
   server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
-        secure: false,
-        ws: true
-      }
-    }
+    port: 3000,
   }
 })
