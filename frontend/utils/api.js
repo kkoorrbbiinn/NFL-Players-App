@@ -4,7 +4,7 @@ export async function getTeams(url) {
     const options = {
         method: 'GET',
         url: url,
-        params: {id: '1'},
+        params: {id: '1'}, 
         headers: {
             'content-type': 'application/octet-stream',
             'X-RapidAPI-Key': 'ea05c29397msha8e4d715a7b5225p1fbaccjsne88bb3b42c32',

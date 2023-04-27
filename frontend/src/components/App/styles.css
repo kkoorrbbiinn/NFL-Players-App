@@ -1,0 +1,70 @@
+* {
+    box-sizing: inherit;
+    color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Arizona {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/zglirxlttuukonnz1il0);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+}
+
+.Atlanta {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/dgksdhs7zhmrioliyq9c);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+}
+
+.Carolina {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/eyotndxveoeyibcbag5k);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+}
+
+.Chicago {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/egkztdkxkhpio4a3unxg);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+}
+
+
+.cardImg {
+    height: 148.8px;
+    width: 148.8px;
+}
+
+.teamName {
+    height: 86.8px;
+    width: 270.1px;
+}
+
+.nfcContainer {
+    display: block;
+    grid-gap: 24px;
+    grid-column: content-start/content-end;
+}
