@@ -32,7 +32,7 @@ const afcTeams = [
     {image: 'https://static.www.nfl.com/image/private/f_auto/league/ketwqeuschqzjsllbid5', name: 'Indianapolis Colts'},
     {image: 'https://res.cloudinary.com/nflleague/image/private/f_auto/league/qycbib6ivrm9dqaexryk', name: 'Jacksonville Jaguars'},
     {image: 'https://res.cloudinary.com/nflleague/image/private/f_auto/league/ujshjqvmnxce8m4obmvs', name: 'Kansas City Chiefs'},
-    {image: 'https://static.www.nfl.com/image/private/f_auto/league/gzcojbzcyjgubgyb6xf2', name: 'Oakland Raiders'},
+    {image: 'https://static.www.nfl.com/image/private/f_auto/league/gzcojbzcyjgubgyb6xf2', name: 'Las Vegas Raiders'},
     {image: 'https://static.www.nfl.com/image/private/f_auto/league/dhfidtn8jrumakbogeu4', name: 'Los Angeles Chargers'},
     {image: 'https://res.cloudinary.com/nflleague/image/private/f_auto/league/lits6p8ycthy9to70bnt', name: 'Miami Dolphins'},
     {image: 'https://res.cloudinary.com/nflleague/image/private/f_auto/league/moyfxx3dq5pio4aiftnc', name: 'New England Patriots'},
@@ -53,28 +53,39 @@ function App() {
 
     return (
         <div className='Container'>
-            <h1>Home Page</h1>
-            <div className='nfcContainer'>
-                <h1>NFC Teams</h1>
-                {nfcTeams.map((team) => { return (
-                    <div className={team.name}>
-                        <img className='cardImg' src={team.image} alt={team.name} />
-                        <div className='teamName'>
-                            <p>{team.name}</p>
-                        </div>
-                    </div>
-                    )
-                })}
+            <div className='navbar'>
+                <a href=''>Home</a>
+                <div className='navBtns'>
+                    <a href=''>Standings</a>
+                </div>
             </div>
-            <div className='afcContainer'>
-                <h1>AFC Teams</h1>
-                {afcTeams.map((team) => { return (
-                    <div className={team.name}>
-                        <img className='cardImg' src={team.image} alt={team.name} />
-                        <p>{team.name}</p>
-                    </div>
-                    ) 
-                })}
+            <div className='columnContainer'>
+                <div className='column'>
+                    <h1 className='divisionTitle'>NFC Teams</h1>
+                    {nfcTeams.map((team) => { return (
+                        <div className={team.name}>
+                            <img className='cardImg' src={team.image} alt={team.name} />
+                            <div className='teamName'>
+                                <h3>{team.name}</h3>
+                                <a className='detailsBtn' href=''>Team Details</a>
+                            </div>
+                        </div>
+                        )
+                    })}
+                </div>
+                <div className='column'>
+                    <h1 className='divisionTitle'>AFC Teams</h1>
+                    {afcTeams.map((team) => { return (
+                        <div className={team.name}>
+                            <img className='cardImg' src={team.image} alt={team.name} />
+                            <div className='teamName'>
+                                <h3>{team.name}</h3>
+                                <a className='detailsBtn' href=''>Team Details</a>
+                            </div>
+                        </div>
+                        ) 
+                    })}
+                </div>
             </div>
         </div>
     )

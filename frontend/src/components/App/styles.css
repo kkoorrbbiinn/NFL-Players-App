@@ -1,5 +1,4 @@
 * {
-    box-sizing: inherit;
     color: white;
 }
 
@@ -7,9 +6,6 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .Arizona {
@@ -20,6 +16,7 @@ body {
     width: 450.92px;
     height: 149px;
     display:flex;
+    margin: 10px 12.5%;
 }
 
 .Atlanta {
@@ -30,6 +27,7 @@ body {
     width: 450.92px;
     height: 149px;
     display:flex;
+    margin: 10px 12.5%;
 }
 
 .Carolina {
@@ -40,6 +38,7 @@ body {
     width: 450.92px;
     height: 149px;
     display:flex;
+    margin: 10px 12.5%;
 }
 
 .Chicago {
@@ -50,6 +49,315 @@ body {
     width: 450.92px;
     height: 149px;
     display:flex;
+    margin: 10px 12.5%;
+}
+
+.Dallas {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/q7qakjbkb5wt7q943epi);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Detroit {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/dlyxxmgt52d7anojsknk);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Green {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/nn9yhffph5ty4qj2gqwu);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Los {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/eo223qd5mlxrna3bbdiv);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Minnesota {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/fnmak0n2pitv59qqmaen);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Orleans {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/qk0qesy5im61qccr5vp0);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.New {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/i94f24mjvgoc64hnqw3o);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Philadelphia {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/p8xl6x8jfe3acs71jtit);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.San {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/aedv7exzsect9be58i0h);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Seattle {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/yfmuzipdfeduwgu4kfta);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Tampa {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/odiwi0h6uplawxy54sqc);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Washington {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/kajwfzxaiqkjvgxozpat);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Baltimore {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/o2k317ev82s6pa26dos7);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Buffalo {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/kujtrvt65vrfbzvlp9p7);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Cincinnati {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/maacoshfmktzddy1ob56);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Cleveland {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/skdxhpn1dmksuyrtwc7q);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Denver {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/zclpmokppqisomcdnnsh);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Houston {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/fwylmmv0iz3dpwx9mcwj);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Indianapolis {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/q1v6xhz44symvucjoxym);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Jacksonville {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/wok03vphgjx4knlyggx4);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Kansas {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/ginftk4rv6gflay6mwur);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Las {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/rthdytrwns8g5aed2uou);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Angeles {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/mkla4gj5w7882z6q0ywz);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Miami {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/xfxniandqn2wglltlxgm);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.England {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/slea5gcxabohzknqnexo);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.York {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/pvenefwq5pl3xxql9ez6);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Pittsburgh {
+    background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/s2ugk74phksrnbla46e7);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
+}
+
+.Tennessee {
+    background-image: url(https://static.www.nfl.com/image/private/f_auto/league/pctgb2f0u7z0oiwpaci3);
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    width: 450.92px;
+    height: 149px;
+    display:flex;
+    margin: 10px 12.5%;
 }
 
 
@@ -61,10 +369,29 @@ body {
 .teamName {
     height: 86.8px;
     width: 270.1px;
+    text-align: center;
 }
 
-.nfcContainer {
-    display: block;
-    grid-gap: 24px;
-    grid-column: content-start/content-end;
+.divisionTitle {
+    border-bottom: 2px solid white;
+}
+
+.columnContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.detailsBtn {
+    text-decoration: none;
+}
+
+.detailsBtn:hover {
+    text-decoration: none;
 }
