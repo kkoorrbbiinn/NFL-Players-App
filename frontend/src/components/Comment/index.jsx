@@ -1,75 +1,26 @@
-import { useState } from "react"
-import { updateComment, deleteComment } from "../../../utils/backend"
+import React, { useState } from 'react';
 
-export default function Comment({ data, refreshComments }) {
-    const [showEditForm, setShowEditForm] = useState(false)
-    const [editFormData, setEditFormData] = useState({
-        name: data.name,
-        content: data.content
-    })
+function Comment({ playerName }) {
+  const [comment, setComment] = useState('');
 
-    function handleInputChange(event) {
-        setEditFormData({
-            ...editFormData,
-            [event.target.name]: event.target.value
-        })
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(`Submitted comment: "${comment}" for player: ${playerName}`);
+    setComment('');
+  };
 
-    function handleSubmit(event) {
-        event.preventDefault()
-        setShowEditForm(false)
-        updateComment(editFormData, data._id)
-            .then(() => refreshComments())
-    }
-
-    function handleDelete() {
-        deleteComment(data._id)
-            .then(() => refreshComments())
-    }
-
-    let commentElement = <div>
-        <p>{data.name}</p>
-        <p>{data.content}</p>
-        <div>
-            <button
-                onClick={() => { setShowEditForm(true) }}>
-                Edit
-            </button>
-            <button
-                onClick={handleDelete}>
-                Delete
-            </button>
-        </div>
-    </div>
-
-    if (showEditForm) {
-        commentElement = <form
-            onSubmit={handleSubmit}>
-            <input
-                name="name"
-                placeholder="Your name"
-                value={editFormData.name}
-                onChange={handleInputChange}
-            />
-            <br />
-            <textarea
-                name="content"
-                placeholder="Share your thoughts on this team!"
-                value={editFormData.content}
-                onChange={handleInputChange}
-            />
-            <div>
-                <button
-                    onClick={() => { setShowEditForm(false) }}>
-                    Close
-                </button>
-                <button
-                    type="submit">
-                    Post
-                </button>
-            </div>
-        </form>
-    }
-
-    return commentElement
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="comment">Comment:</label>
+      <input
+        type="text"
+        id="comment"
+        value={comment}
+        onChange={(event) => setComment(event.target.value)}
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
+
+export default Comment;
