@@ -1,0 +1,11 @@
+.playerCardDetails {
+    width: 31%;
+    display: inline-grid;
+    background-color: #013369;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5px;
+    padding: 2.5px;
+    border: 1px solid white;
+}

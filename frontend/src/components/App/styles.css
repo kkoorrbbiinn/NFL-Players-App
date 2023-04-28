@@ -1,5 +1,7 @@
 * {
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -13,10 +15,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Atlanta {
@@ -24,10 +26,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Carolina {
@@ -35,10 +37,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Chicago {
@@ -46,10 +48,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Dallas {
@@ -57,10 +59,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Detroit {
@@ -68,10 +70,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Green {
@@ -79,21 +81,21 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
-.Los {
+.Rams {
     background-image: url(https://static.www.nfl.com/image/private/f_auto/league/eo223qd5mlxrna3bbdiv);
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Minnesota {
@@ -101,10 +103,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Orleans {
@@ -112,21 +114,21 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
-.New {
+.Giants {
     background-image: url(https://res.cloudinary.com/nflleague/image/private/f_auto/league/i94f24mjvgoc64hnqw3o);
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Philadelphia {
@@ -134,10 +136,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .San {
@@ -145,10 +147,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Seattle {
@@ -156,10 +158,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Tampa {
@@ -167,10 +169,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Washington {
@@ -178,10 +180,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Baltimore {
@@ -189,10 +191,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Buffalo {
@@ -200,10 +202,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Cincinnati {
@@ -211,10 +213,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Cleveland {
@@ -222,10 +224,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Denver {
@@ -233,10 +235,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Houston {
@@ -244,10 +246,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Indianapolis {
@@ -255,10 +257,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Jacksonville {
@@ -266,10 +268,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Kansas {
@@ -277,10 +279,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Las {
@@ -288,21 +290,21 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
-.Angeles {
+.Chargers {
     background-image: url(https://static.www.nfl.com/image/private/f_auto/league/mkla4gj5w7882z6q0ywz);
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Miami {
@@ -310,10 +312,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .England {
@@ -321,21 +323,21 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
-.York {
+.Jets {
     background-image: url(https://static.www.nfl.com/image/private/f_auto/league/pvenefwq5pl3xxql9ez6);
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Pittsburgh {
@@ -343,10 +345,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 .Tennessee {
@@ -354,10 +356,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 450.92px;
+    width: 60%;
     height: 149px;
     display:flex;
-    margin: 10px 12.5%;
+    margin: 10px 20%;
 }
 
 
@@ -393,5 +395,23 @@ body {
 }
 
 .detailsBtn:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #013369;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.navBtn {
+    margin-left: 10px;
+} 
+
+a {
     text-decoration: none;
 }
