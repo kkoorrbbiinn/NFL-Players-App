@@ -28,7 +28,7 @@ function CommentSection() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setShowCreateForm(false)
-        postComments({ comment: comment, playerId: playerId })
+        postComments({ text: comment, playerId: playerId })
             .then(() => refreshComments())
     };
 

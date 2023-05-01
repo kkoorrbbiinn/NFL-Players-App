@@ -8,7 +8,6 @@ export default function Comment({ data, refreshComments }) {
         content: data.content
     })
 
-    // Update the form fields as the user types
     function handleInputChange(event) {
         setEditFormData({
             ...editFormData,
@@ -16,25 +15,18 @@ export default function Comment({ data, refreshComments }) {
         })
     }
 
-    // Execute form submission logic
     function handleSubmit(event) {
-        // prevent the page from reloading
         event.preventDefault()
-        // close the form
         setShowEditForm(false)
-        // update the comment in the backend
         updateComment(editFormData, data._id)
             .then(() => refreshComments())
     }
 
-    // Delete a comment
     function handleDelete() {
         deleteComment(data._id)
             .then(() => refreshComments())
     }
 
-
-    //  Default JSX of each comment
     let commentElement = <div>
         <p>{data.name}</p>
         <p>{data.content}</p>
@@ -48,7 +40,6 @@ export default function Comment({ data, refreshComments }) {
         </div>
     </div>
 
-    // Change the comment to a form if the showEditForm state variable is true
     if (showEditForm) {
         commentElement = <form onSubmit={handleSubmit}>
             <input

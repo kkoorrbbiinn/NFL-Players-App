@@ -6,16 +6,16 @@ export async function getComments(playerId) {
 }
 
 export async function postComments(comment) {
-    const { data } = await axios.post('http://localhost:3000/api/comments', {comment})
+    const { data } = await axios.post('http://localhost:3000/api/comments', comment)
     return data
 }
 
-export async function putComments(comment, id) {
-    const { data } = await axios.put(`/api/comments/${id}`, comment)
+export async function putComments(comment, playerId) {
+    const { data } = await axios.put(`/api/comments/${playerId}`, comment)
     return data
 }
 
 export async function deleteComments(playerId) {
-    const { data } = await axios.delete(`/api/comments/${id}`)
+    const { data } = await axios.delete(`/api/comments/${playerId}`)
     return data
 }

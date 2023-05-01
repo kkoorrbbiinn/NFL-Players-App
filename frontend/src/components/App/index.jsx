@@ -27,7 +27,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<HomePage setTeamData={setDetailsPage}/>} />
                 <Route path='/About' element={<AboutUs />} />
-                <Route path='/TeamDetails/:id' element={<TeamDetails teamData={detailsPage} />} />
+                <Route path='/TeamDetails/:id/*' element={<TeamDetails teamData={detailsPage} />} />
                 <Route path='/CommentSection/:playerId' element={<CommentSection />} />
             </Routes>
         </>
