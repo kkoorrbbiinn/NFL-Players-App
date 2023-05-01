@@ -1,9 +1,17 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Routes, Route, Link, useParams } from 'react-router-dom';
+import CommentSection from '../CommentSection';
 import './styles.css';
 
 export default function TeamDetails({teamData}) {
     const [players, setPlayers] = useState([])
+    const [ renderComponent, setRenderComponent ] = useState(false)
+    const { playerId } = useParams()
+
+    const handleClick = () => {
+        setRenderComponent(true)
+    }
 
     const getPlayers = ( async(teamId) => {
         const options = {
@@ -36,17 +44,24 @@ export default function TeamDetails({teamData}) {
                 {players.map((player) => { return (
                     <div className={'playerCardDetails'}>
                         <img src={player.image} />
+                        <p>{player.id}</p>
                         <p>Name: {player.name}</p>
                         <p>Age: {player.age}</p>
                         <p>Height: {player.height}</p>
                         <p>Weight: {player.weight}</p>
                         <p>Position: {player.position}</p>
                         <p>Experience: {player.experience} years</p>
-                        <p>Click Player Card to Comment</p>
+                        <Link to={`/CommentSection/${player.id}`} onClick={handleClick}>
+                            <p>Click Here to Comment</p>
+                            { renderComponent && <CommentSection playerId={player} /> }
+                        </Link>
                     </div>
                     )
                 })}
             </div>
+            <Routes>
+                {/* <Route path='/CommentSection/playerId' element={<CommentSection />} /> */}
+            </Routes>
         </>
     )
 }

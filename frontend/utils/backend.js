@@ -6,7 +6,7 @@ export async function getComments(teamId) {
 }
 
 export async function postComments(comment) {
-    const { data } = await axios.post('/api/comments', comment)
+    const { data } = await axios.post('http://localhost:3000/api/comments', comment)
     return data
 }
 

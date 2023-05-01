@@ -3,8 +3,7 @@ const mongoose = require('mongoose')
 const CommentSchema = new mongoose.Schema(
     {
         name: { type: String },
-        content: { type: String },
-        courseId: { type: Number }
+        content: { type: String }
     },
     { timestamps: true }
 )
