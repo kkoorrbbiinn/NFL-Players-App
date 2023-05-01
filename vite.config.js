@@ -9,6 +9,6 @@ export default defineConfig({
   root: path.resolve(__dirname, 'frontend'),
   envFile: path.resolve(__dirname, '.env'),
   server: {
-    port: 3001,
+    port: 5000,
   }
 })

@@ -20,6 +20,11 @@ function CommentSection() {
         setComment(event.target.value);
     };
 
+    function refreshComments() {
+        getComments(playerId)
+            .then(newCommentData => setComments(newCommentData))
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         setShowCreateForm(false)
