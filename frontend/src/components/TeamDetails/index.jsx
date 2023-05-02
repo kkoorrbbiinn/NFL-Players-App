@@ -59,9 +59,6 @@ export default function TeamDetails({teamData}) {
                     )
                 })}
             </div>
-            <Routes>
-                {/* <Route path='/CommentSection/playerId' element={<CommentSection />} /> */}
-            </Routes>
         </>
     )
 }

@@ -3,6 +3,7 @@ const Comment = require('../models/commentModel')
 
 const getComments = async (req, res) => {
   try {
+    console.log(req)
     const comments = await Comment.find({})
     res.status(200).json(comments)
   } catch (error) {
@@ -16,6 +17,7 @@ const setComment = async (req, res) => {
   try {
     const comment = await Comment.create({
       text: req.body.text,
+      playerId: req.body.playerId
       // user: req.user.id
     })
     res.status(201).json(comment)
