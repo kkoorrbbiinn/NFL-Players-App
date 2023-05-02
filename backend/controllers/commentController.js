@@ -27,7 +27,6 @@ const setComment = async (req, res) => {
 }
 
 const updateComment = async (req, res) => {
-  try {
     // const user = await User.findById(req.user.id)
     // if(!user) {
     //   res.status(401)
@@ -38,11 +37,12 @@ const updateComment = async (req, res) => {
     //   res.status(401)
     //   throw new Error('User not authorized')
     // }
-    const comment = await Comment.findByIdAndUpdate(req.params.id, req.body, { new: true })
-    res.status(200).json(comment)
-  } catch (error) {
-    res.status(400).json({ message: error.message })
-  }
+    const comment = new Comment({
+      playerId: req.body.playerId,
+      text: req.body.text,
+    });
+    await comment.save();
+    res.json({ message: 'Comment created successfully.' });
 }
 
 const deleteComment = async (req, res) => {

@@ -47,28 +47,15 @@ function CommentSection() {
 
     const loadComments = (id) => {
         getComments(id)
-            .then(comments => setCommentsList(comments))
+            .then(comments => setCommentsList(comments.filter(comment => comment.playerId === playerId)))
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
         setShowCreateForm(false)
         postComments({ text: comment, playerId: playerId })
-            .then(() => loadComments())
+            .then(() => loadComments(playerId))
     };
-
-    // let commentElements = [<p key='0'>No Comments Yet.</p>]
-    // if (commentsList.length > 0) {
-    //     let commentElements = commentsList.map(comment => {
-    //         return <CommentCard
-    //             key={comment._id}
-    //             playerId={playerId}
-    //             commentId={comment._id}
-    //             commentText={comment.text}
-    //             refreshComments={loadComments}
-    //         />
-    //     })
-    // }
 
     return (
         <div>
@@ -93,7 +80,7 @@ function CommentSection() {
                         playerId={playerId}
                         commentId={comment._id}
                         commentText={comment.text}
-                        refreshComments={loadComments}
+                        refreshComments={() => loadComments(playerId)}
                     />
                 })
             }         

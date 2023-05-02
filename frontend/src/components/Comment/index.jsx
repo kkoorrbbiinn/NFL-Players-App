@@ -1,76 +1,50 @@
-// import { useState } from "react"
-// import { updateComment, deleteComment } from "../../../utils/backend"
+import { useState } from 'react';
+import axios from 'axios';
 
-export function Comment({playerId, commentId, commentText, refreshComments}) { 
-    // const [showEditForm, setShowEditForm] = useState(false)
-    // const [editFormData, setEditFormData] = useState({
-    //     name: data.name,
-    //     content: data.content
-    // })
+export function Comment({ playerId, commentId, commentText, refreshComments }) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedCommentText, setEditedCommentText] = useState(commentText);
 
-    // function handleInputChange(event) {
-    //     setEditFormData({
-    //         ...editFormData,
-    //         [event.target.name]: event.target.value
-    //     })
-    // }
+  const handleDelete = () => {
+    console.log(`Deleting comment ${commentId} for player ${playerId}...`);
+    axios.delete(`/comments/${commentId}/delete`)
+      .then(() => refreshComments())
+      .catch(err => console.error(err));
+  };
 
-    // function handleSubmit(event) {
-    //     event.preventDefault()
-    //     setShowEditForm(false)
-    //     updateComment(editFormData, data._id)
-    //         .then(() => refreshComments())
-    // }
+  const handleEditSave = () => {
+    console.log(`Saving edited comment ${commentId} for player ${playerId}...`);
+    setIsEditing(false);
+    axios.put(`/comments/${commentId}/edit`, { text: editedCommentText })
+      .then(() => refreshComments())
+      .catch(err => console.error(err));
+  };
 
-    // function handleDelete() {
-    //     deleteComment(data._id)
-    //         .then(() => refreshComments())
-    // }
+  const handleCancel = () => {
+    setEditedCommentText(commentText);
+    setIsEditing(false);
+  };
 
-    // let commentElement = <div>
-    //     <p>{data.name}</p>
-    //     <p>{data.content}</p>
-    //     <div>
-    //         <button onClick={() => { setShowEditForm(true) }}>
-    //             Edit
-    //         </button>
-    //         <button onClick={handleDelete}>
-    //             Delete
-    //         </button>
-    //     </div>
-    // </div>
+  const handleEditClick = () => {
+    setIsEditing(true);
+  };
 
-    // if (showEditForm) {
-    //     commentElement = <form onSubmit={handleSubmit}>
-    //         <input
-    //             name="name"
-    //             placeholder="Your name"
-    //             value={editFormData.name}
-    //             onChange={handleInputChange}
-    //         />
-    //         <br />
-    //         <textarea
-    //             name="content"
-    //             placeholder="Share your thoughts!"
-    //             value={editFormData.content}
-    //             onChange={handleInputChange}
-    //         />
-    //         <div>
-    //             <button onClick={() => { setShowEditForm(false) }}>
-    //                 Close
-    //             </button>
-    //             <button type="submit">
-    //                 Post
-    //             </button>
-    //         </div>
-    //     </form>
-    // }
-
-    // return commentElement
-    return (
-        <div>
-            <h1>{commentText}</h1>
-            <h2>{commentId}</h2>
-        </div>
-    );
+  return (
+    <div>
+      {isEditing ? (
+        <>
+          <textarea value={editedCommentText} onChange={(e) => setEditedCommentText(e.target.value)} />
+          <button onClick={handleEditSave}>Save</button>
+          <button onClick={handleCancel}>Cancel</button>
+        </>
+      ) : (
+        <>
+          <h1>{commentText}</h1>
+          <h2>{commentId}</h2>
+          <button onClick={handleEditClick}>Edit</button>
+          <button onClick={handleDelete}>Delete</button>
+        </>
+      )}
+    </div>
+  );
 }
