@@ -7,15 +7,15 @@ export function Comment({ playerId, commentId, commentText, refreshComments }) {
 
   const handleDelete = () => {
     console.log(`Deleting comment ${commentId} for player ${playerId}...`);
-    axios.delete(`/comments/${commentId}/delete`)
+    axios.delete(`/api/comments/${commentId}/delete`)
       .then(() => refreshComments())
       .catch(err => console.error(err));
   };
-
+  
   const handleEditSave = () => {
     console.log(`Saving edited comment ${commentId} for player ${playerId}...`);
     setIsEditing(false);
-    axios.put(`/comments/${commentId}/edit`, { text: editedCommentText })
+    axios.put(`/api/comments/${commentId}/edit`, { text: editedCommentText })
       .then(() => refreshComments())
       .catch(err => console.error(err));
   };
