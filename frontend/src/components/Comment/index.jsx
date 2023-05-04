@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import axios from 'axios';
 
+import { putComments, deleteComments } from '../../../utils/backend';
+
 export function Comment({ playerId, commentId, commentText, refreshComments }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedCommentText, setEditedCommentText] = useState(commentText);
 
   const handleDelete = () => {
     console.log(`Deleting comment ${commentId} for player ${playerId}...`);
-    axios.delete(`/api/comments/${commentId}/delete`)
+    deleteComments(commentId)
       .then(() => refreshComments())
       .catch(err => console.error(err));
   };
@@ -15,7 +17,7 @@ export function Comment({ playerId, commentId, commentText, refreshComments }) {
   const handleEditSave = () => {
     console.log(`Saving edited comment ${commentId} for player ${playerId}...`);
     setIsEditing(false);
-    axios.put(`/api/comments/${commentId}/edit`, { text: editedCommentText })
+    putComments({commentId: commentId, text: editedCommentText, playerId: playerId})
       .then(() => refreshComments())
       .catch(err => console.error(err));
   };

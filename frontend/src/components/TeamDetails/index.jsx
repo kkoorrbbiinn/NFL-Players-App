@@ -42,7 +42,7 @@ export default function TeamDetails({teamData}) {
             <h1 className={teamData.name}>{teamData.name}</h1>
             <div className='playerCard'>
                 {players.map((player) => { return (
-                    <div className={'playerCardDetails'}>
+                    <div key={player.id} className={'playerCardDetails'}>
                         <img src={player.image} />
                         <p>{player.id}</p>
                         <p>Name: {player.name}</p>

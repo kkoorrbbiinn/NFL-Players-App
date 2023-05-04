@@ -5,10 +5,9 @@ const { updateMany } = require('../models/commentModel')
 
 // const { protect } = require('../middleware/authMiddleware')
 
-router.route('/').post(setComment)
-router.route('/:id').get(getComments)
-router.route('/:id/edit').put(updateComment)
-router.route('/:id/delete').delete(deleteComment)
+router.route('/').post(setComment).put(updateComment)
+router.route('/:playerId').get(getComments)
+router.route('/:commentId').delete(deleteComment)
 //add protect to all crud for auth
 
 module.exports = router

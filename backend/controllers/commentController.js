@@ -37,9 +37,9 @@ const updateComment = async (req, res) => {
     //   res.status(401)
     //   throw new Error('User not authorized')
     // }
-    const comment = await Comment.findById(req.params.id);
+    const comment = await Comment.findById(req.body.commentId);
     if (!comment) {
-      res.status(404).json({ message: `Comment ${req.params.id} not found` });
+      res.status(404).json({ message: `Comment ${req.body.commentId} not found` });
       return;
     }
     comment.text = req.body.text;
@@ -53,12 +53,12 @@ const updateComment = async (req, res) => {
 
 const deleteComment = async (req, res) => {
   try {
-    const comment = await Comment.findByIdAndDelete(req.params.id);
+    const comment = await Comment.findByIdAndDelete(req.params.commentId);
     if (!comment) {
-      res.status(404).json({ message: `Comment ${req.params.id} not found` });
+      res.status(404).json({ message: `Comment ${req.params.commentId} not found` });
       return;
     }
-    res.status(200).json({ message: `Deleted Comment ${req.params.id}` });
+    res.status(200).json({ message: `Deleted Comment ${req.params.commentId}` });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

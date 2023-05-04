@@ -46,13 +46,13 @@ function HomePage({setTeamData}) {
                     <div className='column'>
                         <h1 className='divisionTitle'>NFC Teams</h1>
                         {nfcTeams.map((team) => { return (
-                            <Link to={`/TeamDetails/${team.name}`} 
+                            <Link key={team.id} to={`/TeamDetails/${team.name}`} 
                             onClick={() => {setTeamData(team)}}>
                                 <div className={team.name}>
                                     <img className='cardImg' src={team.image} alt={team.name} />
                                     <div className='teamName'>
                                         <h3>{team.name}</h3>
-                                        <a className='detailsBtn' href=''>View Players</a>
+                                        <p>View Players</p>
                                     </div>
                                 </div>
                             </Link>
@@ -62,13 +62,13 @@ function HomePage({setTeamData}) {
                     <div className='column'>
                         <h1 className='divisionTitle'>AFC Teams</h1>
                         {afcTeams.map((team) => { return (
-                            <Link to={`/TeamDetails/${team.name}`} 
+                            <Link key={team.id} to={`/TeamDetails/${team.name}`} 
                             onClick={() => {setTeamData(team)}}>
                                 <div className={team.name}>
                                     <img className='cardImg' src={team.image} alt={team.name} />
                                     <div className='teamName'>
                                         <h3>{team.name}</h3>
-                                        <a className='detailsBtn' href=''>View Players</a>
+                                        <p>View Players</p>
                                     </div>
                                 </div>
                             </Link>

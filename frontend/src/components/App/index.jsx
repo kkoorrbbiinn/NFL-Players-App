@@ -19,9 +19,6 @@ function App() {
                         <Link to='/About'>
                             <h3 className='navBtn'>About Us</h3>
                         </Link>
-                        <Link to='/Standings'>
-                            <h3 className='navBtn'>Standings</h3>
-                        </Link>
                 </div>
             </div>
             <Routes>
