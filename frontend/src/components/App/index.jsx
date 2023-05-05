@@ -5,10 +5,23 @@ import HomePage from '../HomePage';
 import TeamDetails from '../TeamDetails';
 import CommentSection from '../CommentSection';
 import './styles.css'
+import { useGoogleOneTapLogin } from '@react-oauth/google';
+import jwt_decode from "jwt-decode";
 
 function App() {
-     const [ detailsPage, setDetailsPage ] = useState()
-     const [ comment, setComment ] = useState ({})
+    const [ detailsPage, setDetailsPage ] = useState()
+    const [user, setUser] = useState({});
+
+    useGoogleOneTapLogin({
+        onSuccess: credentialResponse => {            
+            const tokenData = jwt_decode(credentialResponse.credential);
+            console.log(tokenData);
+            setUser(tokenData);
+        },
+        onError: () => {
+            console.log('Login Failed');
+        },
+    })
     return (
         <>
             <div className='Container'>
@@ -19,6 +32,10 @@ function App() {
                         <Link to='/About'>
                             <h3 className='navBtn'>About Us</h3>
                         </Link>
+                        <div className='userdetails'>
+                            <h1 className='username'>{user?.name}</h1>
+                            <img src={user?.picture} className='userpic' />
+                        </div>
                 </div>
             </div>
             <Routes>

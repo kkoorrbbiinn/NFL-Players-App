@@ -13,7 +13,6 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use('/api/comments', require('./routes/commentRoutes'))
-// app.use('/api/users', require('./routes/userRoutes'))
 app.use(express.static(path.join(__dirname, '../frontend/build')))
 
 app.get('*', (req, res) => {

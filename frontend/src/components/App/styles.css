@@ -15,10 +15,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Atlanta {
@@ -26,10 +26,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Carolina {
@@ -37,10 +37,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Chicago {
@@ -48,10 +48,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Dallas {
@@ -59,10 +59,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Detroit {
@@ -70,10 +70,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Green {
@@ -81,10 +81,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Rams {
@@ -92,10 +92,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Minnesota {
@@ -103,10 +103,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Orleans {
@@ -114,10 +114,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Giants {
@@ -125,10 +125,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Philadelphia {
@@ -136,10 +136,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .San {
@@ -147,10 +147,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Seattle {
@@ -158,10 +158,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Tampa {
@@ -169,10 +169,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Washington {
@@ -180,10 +180,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Baltimore {
@@ -191,10 +191,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Buffalo {
@@ -202,10 +202,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Cincinnati {
@@ -213,10 +213,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Cleveland {
@@ -224,10 +224,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Denver {
@@ -235,10 +235,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Houston {
@@ -246,10 +246,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Indianapolis {
@@ -257,10 +257,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Jacksonville {
@@ -268,10 +268,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Kansas {
@@ -279,10 +279,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Las {
@@ -290,10 +290,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Chargers {
@@ -301,10 +301,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Miami {
@@ -312,10 +312,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .England {
@@ -323,10 +323,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Jets {
@@ -334,10 +334,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Pittsburgh {
@@ -345,10 +345,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 .Tennessee {
@@ -356,10 +356,10 @@ body {
     background-position: 50%;
     background-size: cover;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 149px;
     display:flex;
-    margin: 10px 20%;
+    margin: 10px 0px;
 }
 
 
@@ -370,7 +370,7 @@ body {
 
 .teamName {
     height: 86.8px;
-    width: 270.1px;
+    width: 100%;
     text-align: center;
 }
 
@@ -401,7 +401,6 @@ body {
 .navbar {
     display: flex;
     width: 100%;
-    justify-content: center;
     align-items: center;
     background-color: #013369;
     height: 50px;
@@ -414,4 +413,30 @@ body {
 
 a {
     text-decoration: none;
+}
+
+input {
+    color: black;
+}
+
+.username {
+    padding: 0px 10px;
+    position: relative;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.userpic {
+    position: relative;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.userdetails {
+    display: flex;
+    position: absolute;
+    right: 0;
 }
