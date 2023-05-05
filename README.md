@@ -1,6 +1,6 @@
 NFL Players
 
-This is a web application that allows users to post and organize comments for their favorite NFL. This project is built with React, Express, MongoDB, and the Google OAuth 2.0 API.
+This is a web application that allows users to post, edit, and delete comments for their favorite NFL. This project is built with React, Express, MongoDB, and the Google OAuth 2.0 API.
 Installation
 
     Clone the repository and navigate to the project directory.
@@ -23,6 +23,11 @@ Backend
     The backend server will be available at http://localhost:3000.
 
 Dependencies
+This project connects to the NFL API to get player data.
+Link to the API doc: https://api-sports.io/documentation/nfl/v1
+
+This project uses Google Authentication from npm @react-oauth/google
+Link to docs: https://www.npmjs.com/package/@react-oauth/google
 
 This project uses the following dependencies:
 
