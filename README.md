@@ -10,12 +10,12 @@ Usage
 Starting the Application
 
     Run npm run start to start the frontend and backend servers.
-    The application will be available at http://localhost:5000.
+    The application will be available at http://localhost:3000.
 
 Frontend
 
     Run npm run frontend to start only the frontend server.
-    The frontend server will be available at http://localhost:5000.
+    The frontend server will be available at http://localhost:3000.
 
 Backend
 
