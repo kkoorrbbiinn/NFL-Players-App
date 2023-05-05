@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "vite build && node backend/server.js",
+    "start": "vite build && nodemon backend/server.js",
     "frontend": "vite",
     "backend": "nodemon backend/server.js"
   },
